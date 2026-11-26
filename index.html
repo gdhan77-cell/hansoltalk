@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>한솔 토크 살롱 — 명리 · 시낭송 · 문학 · 인문 공간</title>
+<meta name="description" content="시낭송가 한경동의 인문·예술 공간, 한솔 토크 살롱. 명리 상담, 시낭송과 낭독, 창작과 평론, 시극과 시치유, 인문학 공부를 한자리에서 만나 보세요.">
+<meta name="theme-color" content="#14110e">
+<meta property="og:type" content="website">
+<meta property="og:title" content="한솔 토크 살롱 — 명리 · 시낭송 · 문학 · 인문 공간">
+<meta property="og:description" content="사주를 읽고, 시를 낭송하고, 삶의 이야기를 나누는 작은 살롱. 한솔 토크 살롱 · hansoltalk.kr">
+<meta property="og:url" content="https://hansoltalk.kr/">
+<link rel="canonical" href="https://hansoltalk.kr/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%236d2b2d'/%3E%3Crect x='7' y='7' width='50' height='50' rx='4' fill='none' stroke='%23d3b483' stroke-width='1.5'/%3E%3Ctext x='32' y='43' font-family='serif' font-size='30' fill='%23f5eddd' text-anchor='middle'%3E%E9%9F%93%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"한솔 토크 살롱","alternateName":"HANSOL TALK SALON","url":"https://hansoltalk.kr/","telephone":"+82-10-8710-9935","description":"명리 · 시낭송 · 문학 · 인문 공간","sameAs":["https://blog.naver.com/gdhan7","https://gdhan77-cell.github.io/hansol-saju/"]}
+</script>
+<style>
+/* ============================================================
+   한솔 토크 살롱 — 대표 홈페이지 (단일 HTML · 자체 완결형)
+   ============================================================ */
+:root{
+  --ink:#14110e;
+  --ink-2:#1c1814;
+  --ink-3:#26201a;
+  --ink-4:#332a22;
+  --hanji:#f5eddd;
+  --hanji-2:#eee3cf;
+  --hanji-3:#e3d5bc;
+  --paper:#fbf6ea;
+  --gold:#b08d57;
+  --gold-l:#d8bb8a;
+  --gold-d:#8a6a3c;
+  --burgundy:#6d2b2d;
+  --burgundy-d:#4e1e20;
+  --txt:#2b241c;
+  --txt-soft:#574c3f;
+  --muted:#877a68;
+  --muted-dark:#a99b86;
+  --line:rgba(43,36,28,.14);
+  --line-gold:rgba(176,141,87,.34);
+  --serif:"Nanum Myeongjo","Noto Serif KR","Noto Serif CJK KR",Batang,"바탕",Gungsuh,"궁서",serif;
+  --sans:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic","Noto Sans CJK KR",system-ui,sans-serif;
+  --shadow:0 18px 44px -26px rgba(20,17,14,.42);
+  --wrap:1180px;
+  --head:76px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  margin:0;
+  background:var(--hanji);
+  color:var(--txt);
+  font-family:var(--sans);
+  font-weight:400;
+  font-size:16.5px;
+  line-height:1.78;
+  letter-spacing:-.005em;
+  word-break:keep-all;
+  overflow-wrap:break-word;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:
+    radial-gradient(1200px 600px at 12% -8%, rgba(176,141,87,.10), transparent 62%),
+    radial-gradient(900px 520px at 105% 8%, rgba(109,43,45,.07), transparent 60%),
+    repeating-linear-gradient(0deg, rgba(120,92,52,.020) 0 1px, transparent 1px 3px);
+  mix-blend-mode:multiply;
+}
+img,svg{max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:700;line-height:1.34;letter-spacing:-.02em;margin:0}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+.wrap{width:min(var(--wrap),calc(100% - 64px));margin-inline:auto;position:relative;z-index:1}
+.skip{position:absolute;left:-9999px;top:0;z-index:200;background:var(--ink);color:var(--hanji);padding:12px 18px;border-radius:0 0 6px 0}
+.skip:focus{left:0}
+
+/* ── 공통 타이포 ─────────────────────────────────────────── */
+.eyebrow{
+  display:flex;align-items:center;gap:14px;
+  font-size:12.5px;letter-spacing:.26em;font-weight:500;text-transform:uppercase;
+  color:var(--gold);margin:0 0 22px;
+}
+.eyebrow::before{content:"";display:block;width:38px;height:1px;background:currentColor;opacity:.7}
+.sec-no{
+  font-size:12.5px;letter-spacing:.22em;color:var(--gold-d);font-weight:500;
+  margin:0 0 16px;display:flex;align-items:center;gap:12px;
+}
+.sec-no::after{content:"";flex:1;height:1px;background:var(--line-gold);max-width:90px}
+.sec-title{font-size:clamp(1.8rem,3.4vw,2.7rem);font-weight:800;letter-spacing:-.025em}
+.sec-title em{font-style:normal;color:var(--burgundy)}
+.sec-lead{margin-top:18px;color:var(--txt-soft);max-width:60ch;font-size:16.5px}
+
+/* ── 버튼 ───────────────────────────────────────────────── */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:15px 30px;border-radius:2px;border:1px solid transparent;
+  font-size:15px;font-weight:500;letter-spacing:.01em;line-height:1.2;
+  transition:background .3s,color .3s,border-color .3s,transform .3s,box-shadow .3s;
+  cursor:pointer;text-align:center;
+}
+.btn svg{flex:0 0 auto}
+.btn-gold{background:linear-gradient(140deg,#cdae7d,#b08d57);color:#1b1611;box-shadow:0 12px 26px -18px rgba(176,141,87,.9)}
+.btn-gold:hover{background:linear-gradient(140deg,#dcc094,#bb9862);transform:translateY(-2px)}
+.btn-ghost{border-color:rgba(245,237,221,.42);color:var(--hanji)}
+.btn-ghost:hover{border-color:var(--gold-l);color:var(--gold-l);background:rgba(245,237,221,.06)}
+.btn-ink{background:var(--ink);color:var(--hanji)}
+.btn-ink:hover{background:var(--ink-3);transform:translateY(-2px)}
+.btn-line{border-color:var(--line-gold);color:var(--txt)}
+.btn-line:hover{border-color:var(--gold);color:var(--burgundy);background:rgba(176,141,87,.07)}
+.btn-line-light{border-color:rgba(216,187,138,.45);color:var(--hanji)}
+.btn-line-light:hover{border-color:var(--gold-l);background:rgba(216,187,138,.10)}
+
+/* ── 헤더 ───────────────────────────────────────────────── */
+.header{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  transition:background .4s,box-shadow .4s,border-color .4s,color .4s;
+  border-bottom:1px solid transparent;color:var(--hanji);
+}
+.header-inner{
+  height:var(--head);display:flex;align-items:center;gap:26px;
+  width:min(1320px,calc(100% - 48px));margin-inline:auto;
+}
+.header.is-solid{
+  background:rgba(247,240,228,.92);
+  -webkit-backdrop-filter:blur(14px) saturate(1.1);backdrop-filter:blur(14px) saturate(1.1);
+  border-bottom-color:rgba(176,141,87,.30);
+  box-shadow:0 10px 30px -26px rgba(20,17,14,.6);
+  color:var(--txt);
+}
+.brand{display:flex;align-items:center;gap:12px;flex:0 0 auto}
+.brand-seal{
+  width:40px;height:40px;flex:0 0 40px;display:grid;place-items:center;
+  background:var(--burgundy);color:#f7e9d2;border-radius:3px;
+  font-family:var(--serif);font-size:13px;font-weight:600;line-height:1.05;letter-spacing:0;
+  box-shadow:inset 0 0 0 1px rgba(216,187,138,.55),0 3px 10px -6px rgba(0,0,0,.6);
+  text-align:center;
+}
+.brand-text{display:flex;flex-direction:column;line-height:1.15}
+.brand-text strong{font-family:var(--serif);font-size:18px;font-weight:800;letter-spacing:-.01em}
+.brand-text em{font-style:normal;font-size:9.5px;letter-spacing:.24em;opacity:.66;margin-top:5px}
+.site-nav{margin-left:auto;display:flex;align-items:center;gap:2px}
+.site-nav a{
+  position:relative;padding:10px 13px;font-size:14px;font-weight:500;letter-spacing:.01em;
+  color:inherit;opacity:.86;transition:opacity .25s,color .25s;white-space:nowrap;
+}
+.site-nav a::after{
+  content:"";position:absolute;left:13px;right:13px;bottom:4px;height:1px;
+  background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .3s;
+}
+.site-nav a:hover{opacity:1;color:var(--gold-l)}
+.site-nav a.is-active{opacity:1;color:var(--gold-l)}
+.site-nav a.is-active::after{transform:scaleX(1)}
+.header.is-solid .site-nav a:hover,.header.is-solid .site-nav a.is-active{color:var(--burgundy)}
+.header-cta{
+  display:inline-flex;align-items:center;gap:9px;padding:10px 18px;border:1px solid rgba(216,187,138,.55);
+  border-radius:2px;font-size:13.5px;font-weight:500;white-space:nowrap;transition:background .3s,color .3s,border-color .3s;
+}
+.header-cta:hover{background:rgba(216,187,138,.14);border-color:var(--gold-l)}
+.header.is-solid .header-cta{border-color:var(--line-gold);color:var(--burgundy)}
+.header.is-solid .header-cta:hover{background:rgba(176,141,87,.10)}
+.nav-toggle{
+  display:none;margin-left:auto;width:44px;height:44px;background:none;border:1px solid rgba(216,187,138,.5);
+  border-radius:2px;place-items:center;cursor:pointer;position:relative;
+}
+.nav-toggle span{display:block;width:20px;height:1.5px;background:currentColor;position:relative;transition:transform .3s,opacity .3s}
+.nav-toggle span::before,.nav-toggle span::after{content:"";position:absolute;left:0;width:20px;height:1.5px;background:currentColor;transition:transform .3s}
+.nav-toggle span::before{top:-6px}
+.nav-toggle span::after{top:6px}
+body.nav-open .nav-toggle span{background:transparent}
+body.nav-open .nav-toggle span::before{transform:translateY(6px) rotate(45deg)}
+body.nav-open .nav-toggle span::after{transform:translateY(-6px) rotate(-45deg)}
+
+/* 모바일 드로어 */
+.drawer{
+  position:fixed;inset:0;z-index:99;background:linear-gradient(165deg,#1d1813,#120f0c 70%);
+  color:var(--hanji);padding:calc(var(--head) + 26px) 32px 40px;
+  display:flex;flex-direction:column;gap:4px;overflow-y:auto;
+  opacity:0;visibility:hidden;transform:translateY(-8px);
+  transition:opacity .35s,transform .35s,visibility .35s;
+}
+body.nav-open .drawer{opacity:1;visibility:visible;transform:none}
+.drawer .d-eyebrow{font-size:11.5px;letter-spacing:.28em;color:var(--gold);margin:0 0 18px}
+.drawer a.d-link{
+  display:flex;align-items:baseline;gap:14px;padding:15px 2px;border-bottom:1px solid rgba(245,237,221,.10);
+  font-family:var(--serif);font-size:22px;letter-spacing:.01em;
+}
+.drawer a.d-link i{font-style:normal;font-size:11px;letter-spacing:.14em;color:var(--gold);opacity:.85;font-family:var(--sans)}
+.drawer .d-foot{margin-top:auto;padding-top:28px;display:flex;flex-direction:column;gap:14px}
+.drawer .d-foot .btn{width:100%}
+.drawer .d-note{font-size:13px;color:var(--muted-dark);text-align:center}
+
+/* ── 히어로 ─────────────────────────────────────────────── */
+.hero{
+  position:relative;background:var(--ink);color:var(--hanji);
+  padding:calc(var(--head) + 74px) 0 0;overflow:hidden;isolation:isolate;
+}
+.hero::before{
+  content:"";position:absolute;inset:0;z-index:-2;
+  background:
+    radial-gradient(760px 520px at 78% 18%, rgba(176,141,87,.20), transparent 62%),
+    radial-gradient(620px 460px at 8% 82%, rgba(109,43,45,.26), transparent 65%),
+    linear-gradient(180deg,#171310 0%,#14110e 58%,#191410 100%);
+}
+.hero::after{
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.5;
+  background-image:
+    repeating-linear-gradient(90deg, rgba(216,187,138,.10) 0 1px, transparent 1px 84px),
+    repeating-linear-gradient(0deg, rgba(216,187,138,.07) 0 1px, transparent 1px 84px);
+  -webkit-mask-image:radial-gradient(120% 90% at 85% 10%, #000 0%, transparent 72%);
+  mask-image:radial-gradient(120% 90% at 85% 10%, #000 0%, transparent 72%);
+}
+.hero-inner{
+  display:grid;grid-template-columns:1.16fr .84fr;gap:clamp(32px,5vw,84px);
+  align-items:center;padding-bottom:clamp(56px,7vw,92px);
+}
+.hero-copy{max-width:640px}
+.hero-title{
+  font-size:clamp(2.55rem,5.2vw,4.1rem);line-height:1.2;letter-spacing:-.02em;
+  margin:0;font-weight:800;
+  text-shadow:0 2px 40px rgba(0,0,0,.35);
+}
+.hero-sub{
+  margin-top:22px;font-size:clamp(13px,1.5vw,15px);letter-spacing:.34em;
+  color:var(--gold-l);font-weight:500;
+}
+.hero-sub span{color:rgba(245,237,221,.45);margin:0 .18em}
+.hero-lead{
+  margin-top:26px;font-size:clamp(15.5px,1.6vw,17px);line-height:1.85;
+  color:rgba(245,237,221,.80);max-width:47ch;
+}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:38px}
+.hero-meta{
+  display:flex;flex-wrap:wrap;gap:10px 34px;margin-top:42px;padding-top:24px;
+  border-top:1px solid rgba(245,237,221,.16);font-size:13.5px;color:rgba(245,237,221,.72);
+}
+.hero-meta li{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:baseline}
+.hero-meta span{font-size:10.5px;letter-spacing:.2em;color:var(--gold);text-transform:uppercase}
+.hero-meta b{font-weight:400;color:rgba(245,237,221,.82)}
+
+/* 초대장 카드 */
+.invite{
+  position:relative;padding:1px;
+  background:linear-gradient(150deg,rgba(216,187,138,.75),rgba(216,187,138,.10) 42%,rgba(216,187,138,.45));
+  box-shadow:0 40px 80px -50px rgba(0,0,0,.9);
+}
+.invite-inner{
+  position:relative;padding:clamp(30px,3.4vw,46px);min-height:390px;
+  background:
+    radial-gradient(120% 90% at 80% 0%, rgba(176,141,87,.16), transparent 60%),
+    linear-gradient(165deg,#221c16,#171310);
+  display:flex;flex-direction:column;
+}
+.invite-inner::before{
+  content:"";position:absolute;inset:13px;border:1px solid rgba(216,187,138,.22);pointer-events:none;
+}
+.invite-han{
+  position:absolute;right:20px;top:50%;transform:translateY(-44%);
+  font-family:var(--serif);font-size:64px;font-weight:400;
+  line-height:1;color:rgba(216,187,138,.09);writing-mode:vertical-rl;letter-spacing:.06em;
+  user-select:none;pointer-events:none;
+}
+.invite-label{
+  font-size:10.5px;letter-spacing:.32em;color:var(--gold);text-transform:uppercase;margin-bottom:auto;
+}
+.invite-quote{
+  font-family:var(--serif);font-weight:400;font-size:clamp(1.3rem,2.2vw,1.75rem);line-height:1.68;
+  color:#f7eddb;letter-spacing:-.005em;margin:34px 0 18px;position:relative;
+}
+.invite-quote::before{
+  content:"";display:block;width:34px;height:1px;background:var(--gold);opacity:.8;margin-bottom:22px;
+}
+.invite-note{font-size:13.5px;line-height:1.9;color:rgba(245,237,221,.62)}
+.invite-foot{
+  margin-top:30px;padding-top:20px;border-top:1px solid rgba(216,187,138,.20);
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+  font-size:11px;letter-spacing:.22em;color:rgba(216,187,138,.85);
+}
+.invite-foot strong{font-weight:700;font-family:var(--serif);font-size:13.5px;letter-spacing:.06em;color:rgba(245,237,221,.88)}
+
+/* 키워드 띠 */
+.kwband{border-top:1px solid rgba(216,187,138,.18);padding:22px 0;background:rgba(0,0,0,.18)}
+.kw{display:flex;flex-wrap:wrap;align-items:center;gap:10px 0;justify-content:center}
+.kw li{
+  font-family:var(--serif);font-size:14.5px;letter-spacing:.16em;color:rgba(245,237,221,.66);
+  display:flex;align-items:center;gap:0;
+}
+.kw li:not(:last-child)::after{content:"";width:3px;height:3px;border-radius:50%;background:var(--gold);opacity:.55;margin:0 26px}
+
+/* ── 섹션 공통 ──────────────────────────────────────────── */
+.section{padding:clamp(66px,8vw,112px) 0;position:relative;scroll-margin-top:calc(var(--head) + 6px)}
+.section-head{max-width:720px}
+.section-head .sec-lead{margin-top:20px}
+
+/* ── 살롱 소개 ──────────────────────────────────────────── */
+.about{background:linear-gradient(180deg,var(--hanji) 0%,#f2e8d5 100%)}
+.about-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(36px,5vw,80px);align-items:start}
+.about-quote{
+  font-family:var(--serif);font-weight:400;font-size:clamp(1.35rem,2.3vw,1.85rem);line-height:1.78;color:var(--ink-3);
+  border-left:2px solid var(--gold);padding-left:clamp(20px,2.6vw,32px);margin-top:34px;
+}
+.about-quote span{color:var(--burgundy)}
+.about-body p{color:var(--txt-soft);margin-bottom:18px;font-size:16.5px}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-gold);margin-top:clamp(44px,5vw,64px);border:1px solid var(--line-gold)}
+.pillar{background:var(--paper);padding:clamp(24px,2.6vw,34px)}
+.pillar-han{
+  font-family:var(--serif);font-size:34px;color:var(--burgundy);line-height:1;opacity:.9;
+  display:flex;align-items:center;gap:12px;
+}
+.pillar-han::after{content:"";flex:1;height:1px;background:var(--line-gold)}
+.pillar h3{font-size:19px;margin-top:18px;font-weight:800}
+.pillar p{margin-top:10px;font-size:14.5px;line-height:1.75;color:var(--txt-soft)}
+
+/* ── 일곱 개의 문 ───────────────────────────────────────── */
+.doors{background:var(--ink);color:var(--hanji);overflow:hidden}
+.doors::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(800px 500px at 85% 0%, rgba(176,141,87,.14), transparent 60%),
+             radial-gradient(700px 500px at 0% 100%, rgba(109,43,45,.20), transparent 62%);
+}
+.doors .wrap{z-index:1}
+.doors .sec-title{color:#f7eddb}
+.doors .sec-title em{color:var(--gold-l)}
+.doors .sec-no{color:var(--gold)}
+.doors .sec-no::after{background:rgba(216,187,138,.35)}
+.doors .sec-lead{color:rgba(245,237,221,.68)}
+.door-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:clamp(40px,5vw,60px);
+}
+.door{
+  position:relative;display:flex;flex-direction:column;text-align:left;
+  background:linear-gradient(165deg,#f7f0e1,#e9dcc4);
+  color:var(--ink);border:1px solid rgba(216,187,138,.30);
+  padding:clamp(22px,2.2vw,28px);min-height:222px;cursor:pointer;
+  transition:transform .35s cubic-bezier(.22,.61,.36,1),box-shadow .35s,border-color .35s,background .35s;
+  overflow:hidden;font-family:inherit;
+}
+.door::after{
+  content:"";position:absolute;inset:8px;border:1px solid rgba(109,43,45,.10);
+  opacity:0;transition:opacity .35s;pointer-events:none;
+}
+.door:hover{transform:translateY(-5px);box-shadow:0 26px 50px -34px rgba(0,0,0,.8);border-color:rgba(216,187,138,.85)}
+.door:hover::after{opacity:1}
+.door:focus-visible{outline-offset:4px}
+.door-feature{
+  grid-column:span 2;
+  background:linear-gradient(155deg,#2a221b,#1a1511 70%);
+  color:var(--hanji);border-color:rgba(216,187,138,.45);
+}
+.door-feature::after{border-color:rgba(216,187,138,.22)}
+.door-no{
+  font-size:11px;letter-spacing:.22em;color:var(--gold-d);font-weight:500;
+}
+.door-feature .door-no{color:var(--gold)}
+.door-han{
+  position:absolute;right:-2px;bottom:-34px;font-family:var(--serif);font-weight:400;font-size:100px;line-height:1;
+  color:rgba(109,43,45,.075);pointer-events:none;user-select:none;
+}
+.door-feature .door-han{color:rgba(216,187,138,.13);font-size:126px;bottom:-40px}
+.door-body{display:block;margin-top:auto;position:relative;z-index:1}
+.door-title{
+  display:block;font-family:var(--serif);font-size:clamp(20px,1.9vw,23px);font-weight:700;letter-spacing:-.02em;
+}
+.door-feature .door-title{font-size:clamp(23px,2.4vw,29px)}
+.door-en{display:block;font-size:10px;letter-spacing:.2em;color:var(--gold-d);margin-top:7px;text-transform:uppercase}
+.door-feature .door-en{color:var(--gold)}
+.door-tag{display:block;font-size:14px;line-height:1.6;color:var(--txt-soft);margin-top:14px;max-width:26ch}
+.door-feature .door-tag{color:rgba(245,237,221,.72);max-width:22ch}
+.door-more{
+  display:inline-flex;align-items:center;gap:7px;margin-top:18px;font-size:12px;letter-spacing:.12em;
+  color:var(--burgundy);font-weight:500;
+}
+.door-feature .door-more{color:var(--gold-l)}
+.door-more svg{transition:transform .3s}
+.door:hover .door-more svg{transform:translateX(4px)}
+.door.is-open{border-color:var(--gold-l);box-shadow:0 0 0 1px var(--gold-l) inset}
+.door.is-open .door-more{color:var(--gold-l)}
+
+/* 상세 패널 */
+.panel-wrap{
+  display:grid;grid-template-rows:0fr;opacity:0;margin-top:0;
+  transition:grid-template-rows .55s cubic-bezier(.22,.61,.36,1),opacity .45s,margin-top .45s;
+  scroll-margin-top:calc(var(--head) + 18px);
+}
+.panel-wrap.is-open{grid-template-rows:1fr;opacity:1;margin-top:26px}
+.panel-clip{overflow:hidden}
+.panel{
+  position:relative;background:linear-gradient(160deg,#fbf5e8,#f1e6d2);
+  color:var(--txt);border:1px solid rgba(216,187,138,.55);
+  padding:clamp(26px,3.4vw,50px);box-shadow:0 30px 60px -46px rgba(0,0,0,.9);
+}
+.panel::before{content:"";position:absolute;inset:9px;border:1px solid rgba(176,141,87,.22);pointer-events:none}
+.panel-close{
+  position:absolute;top:12px;right:12px;z-index:2;
+  display:inline-flex;align-items:center;gap:7px;padding:8px 13px;
+  background:transparent;border:1px solid var(--line-gold);color:var(--txt-soft);
+  font-size:12px;letter-spacing:.08em;cursor:pointer;transition:background .25s,color .25s,border-color .25s;
+}
+.panel-close:hover{background:rgba(109,43,45,.08);color:var(--burgundy);border-color:var(--burgundy)}
+.panel-grid{display:grid;grid-template-columns:.86fr 1.14fr;gap:clamp(26px,4vw,56px)}
+.panel-no{font-size:11px;letter-spacing:.24em;color:var(--gold-d);margin-bottom:14px}
+.panel-title{font-size:clamp(1.75rem,2.9vw,2.3rem);color:var(--ink);font-weight:800;letter-spacing:-.02em}
+.panel-item h4{font-family:var(--serif)}
+.panel-han{
+  font-family:var(--serif);font-size:64px;line-height:1;color:rgba(109,43,45,.16);
+  margin-top:18px;letter-spacing:.02em;
+}
+.panel-lead{margin-top:16px;font-size:15.5px;line-height:1.85;color:var(--txt-soft);max-width:38ch}
+.panel-for{
+  margin-top:24px;padding:16px 18px;background:rgba(176,141,87,.10);
+  border-left:2px solid var(--gold);font-size:13.5px;line-height:1.75;color:var(--txt-soft);
+}
+.panel-for strong{display:block;font-size:10.5px;letter-spacing:.2em;color:var(--gold-d);margin-bottom:6px;font-weight:500}
+.panel-items{display:flex;flex-direction:column}
+.panel-item{display:grid;grid-template-columns:auto 1fr;gap:16px;padding:17px 0;border-bottom:1px solid rgba(43,36,28,.12)}
+.panel-item:first-child{padding-top:4px}
+.panel-item i{
+  font-style:normal;font-family:var(--serif);font-size:12px;color:var(--gold-d);
+  letter-spacing:.08em;padding-top:4px;
+}
+.panel-item h4{font-size:16.5px;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
+.panel-item p{font-size:14px;line-height:1.72;color:var(--txt-soft);margin-top:5px}
+.panel-ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.panel-ctas .btn{padding:13px 22px;font-size:14px}
+.panel-note{margin-top:16px;font-size:12.5px;color:var(--muted)}
+
+.noscript{margin-top:20px;padding:16px 20px;border:1px solid var(--line-gold);font-size:14px;color:var(--txt-soft);background:rgba(176,141,87,.08)}
+
+/* ── 대표 소개 ──────────────────────────────────────────── */
+.host{background:linear-gradient(180deg,#f4ebd9,#efe3ce)}
+.host-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:clamp(34px,5vw,76px);align-items:center}
+.host-card{
+  position:relative;background:linear-gradient(165deg,#241e18,#171310);color:var(--hanji);
+  padding:clamp(26px,3vw,40px);border:1px solid rgba(216,187,138,.38);overflow:hidden;
+}
+.host-card::before{content:"";position:absolute;inset:10px;border:1px solid rgba(216,187,138,.20);pointer-events:none}
+.host-seal{
+  width:76px;height:76px;display:grid;place-items:center;background:var(--burgundy);color:#f7e9d2;
+  font-family:var(--serif);font-size:26px;line-height:1;border-radius:3px;
+  box-shadow:inset 0 0 0 1px rgba(216,187,138,.6);
+}
+.host-card h3{font-size:clamp(1.5rem,2.3vw,1.9rem);margin-top:26px;color:#f7eddb}
+.host-card .host-role{font-size:13px;letter-spacing:.16em;color:var(--gold-l);margin-top:12px;line-height:1.9}
+.host-card .host-vertical{
+  position:absolute;right:16px;top:26px;writing-mode:vertical-rl;font-family:var(--serif);
+  font-size:15px;letter-spacing:.42em;color:rgba(216,187,138,.55);
+}
+.host-card .host-quote{
+  margin-top:30px;padding-top:22px;border-top:1px solid rgba(216,187,138,.22);
+  font-family:var(--serif);font-weight:400;font-size:15px;line-height:2.0;color:rgba(245,237,221,.82);
+  word-break:keep-all;
+}
+.host-body h2{font-size:clamp(1.8rem,3.3vw,2.55rem);font-weight:800;color:var(--ink);line-height:1.42}
+.host-body h2 em{font-style:normal;color:var(--burgundy)}
+.host-body p{margin-top:18px;color:var(--txt-soft);font-size:16.5px}
+.host-list{margin-top:30px;border-top:1px solid var(--line-gold)}
+.host-list li{display:grid;grid-template-columns:112px 1fr;gap:16px;padding:15px 0;border-bottom:1px solid var(--line-gold);font-size:14.5px;color:var(--txt-soft)}
+.host-list span{font-size:11px;letter-spacing:.16em;color:var(--gold-d);padding-top:4px}
+
+/* ── 살롱의 방식 ────────────────────────────────────────── */
+.how{background:var(--paper)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-gold);margin-top:clamp(40px,5vw,56px);border:1px solid var(--line-gold)}
+.step{background:var(--paper);padding:clamp(22px,2.4vw,30px);position:relative}
+.step-no{font-family:var(--serif);font-size:13px;letter-spacing:.2em;color:var(--gold-d)}
+.step h3{font-size:18px;margin-top:16px;color:var(--ink);font-weight:700}
+.step p{font-size:13.8px;line-height:1.72;color:var(--txt-soft);margin-top:9px}
+.faq{margin-top:clamp(44px,5vw,64px);border-top:1px solid var(--line-gold)}
+.faq details{border-bottom:1px solid var(--line-gold)}
+.faq summary{
+  list-style:none;cursor:pointer;padding:22px 44px 22px 0;position:relative;
+  font-family:var(--serif);font-size:16.5px;font-weight:700;color:var(--ink);transition:color .25s;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:hover{color:var(--burgundy)}
+.faq summary::after{
+  content:"";position:absolute;right:6px;top:50%;width:9px;height:9px;
+  border-right:1px solid var(--gold-d);border-bottom:1px solid var(--gold-d);
+  transform:translateY(-70%) rotate(45deg);transition:transform .3s;
+}
+.faq details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+.faq .faq-a{padding:0 0 24px;font-size:15px;line-height:1.82;color:var(--txt-soft);max-width:72ch}
+
+/* ── 밴드(블로그 / AI 사주) ─────────────────────────────── */
+.band{padding:clamp(56px,6.5vw,92px) 0}
+.band-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,70px);align-items:center}
+.blog-band{background:linear-gradient(160deg,#eee2cc,#e7d8bd);border-top:1px solid rgba(176,141,87,.25);border-bottom:1px solid rgba(176,141,87,.25)}
+.blog-band h2{font-size:clamp(1.45rem,2.5vw,2rem);font-weight:800;color:var(--ink);margin-top:14px;line-height:1.5}
+.blog-band p{margin-top:16px;color:var(--txt-soft);font-size:15.5px;max-width:46ch}
+.blog-band .btn{margin-top:26px}
+.note-list{border-top:1px solid var(--line-gold)}
+.note-list li{border-bottom:1px solid var(--line-gold);padding:16px 0;display:grid;grid-template-columns:62px 1fr;gap:14px;font-size:14.5px;color:var(--txt-soft)}
+.note-list span{font-size:10.5px;letter-spacing:.16em;color:var(--gold-d);padding-top:4px}
+.ai-band{
+  background:
+    radial-gradient(700px 420px at 85% 20%, rgba(176,141,87,.20), transparent 62%),
+    linear-gradient(150deg,#231b1a,#4b1f22 60%,#2a1918);
+  color:var(--hanji);
+}
+.ai-band .sec-no{color:var(--gold-l)}
+.ai-band .sec-no::after{background:rgba(216,187,138,.35)}
+.ai-band h2{font-size:clamp(1.65rem,2.9vw,2.4rem);font-weight:800;color:#f8efdd;margin-top:14px;line-height:1.45}
+.ai-band p{margin-top:16px;color:rgba(245,237,221,.74);font-size:15.5px;max-width:46ch}
+.ai-band .btn{margin-top:26px}
+.ai-feats{display:flex;flex-direction:column;gap:1px;background:rgba(216,187,138,.28);border:1px solid rgba(216,187,138,.28)}
+.ai-feat{background:rgba(20,17,14,.42);padding:20px 22px;display:flex;align-items:baseline;gap:14px}
+.ai-feat b{font-family:var(--serif);font-size:12px;letter-spacing:.1em;color:var(--gold-l);font-weight:500;flex:0 0 auto;min-width:44px}
+.ai-feat span{font-size:14.5px;color:rgba(245,237,221,.82);line-height:1.6}
+.ai-tiny{margin-top:14px !important;font-size:12px !important;color:rgba(245,237,221,.5) !important}
+
+/* ── 문의 ───────────────────────────────────────────────── */
+.contact{background:var(--ink);color:var(--hanji);position:relative;overflow:hidden}
+.contact::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(700px 480px at 50% -10%, rgba(176,141,87,.20), transparent 62%);
+}
+.contact-head{text-align:center;max-width:660px;margin:0 auto}
+.contact-head .sec-no{justify-content:center;color:var(--gold)}
+.contact-head .sec-no::after{display:none}
+.contact-head h2{font-size:clamp(1.8rem,3.6vw,2.7rem);font-weight:800;color:#f8efdd;line-height:1.45}
+.contact-head p{margin-top:18px;color:rgba(245,237,221,.70);font-size:16px}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:clamp(40px,5vw,58px)}
+.ccard{
+  position:relative;display:flex;flex-direction:column;gap:0;padding:clamp(24px,2.6vw,32px);
+  border:1px solid rgba(216,187,138,.30);background:rgba(245,237,221,.035);
+  transition:background .3s,border-color .3s,transform .3s;min-height:172px;
+}
+.ccard:hover{background:rgba(216,187,138,.09);border-color:rgba(216,187,138,.75);transform:translateY(-3px)}
+.ccard-k{font-size:10.5px;letter-spacing:.24em;color:var(--gold);text-transform:uppercase}
+.ccard-v{font-family:var(--serif);font-weight:700;font-size:clamp(17px,1.8vw,20px);color:#f8efdd;margin-top:auto;letter-spacing:-.01em}
+.ccard-n{font-size:12.5px;color:rgba(245,237,221,.58);margin-top:8px;line-height:1.6}
+.contact-note{
+  margin-top:26px;text-align:center;font-size:13px;color:rgba(245,237,221,.55);line-height:1.8;
+}
+
+/* ── 푸터 ───────────────────────────────────────────────── */
+.footer{background:#100d0b;color:rgba(245,237,221,.62);padding:56px 0 30px;border-top:1px solid rgba(216,187,138,.18)}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px}
+.footer .brand{color:var(--hanji);margin-bottom:18px}
+.footer p{font-size:13.5px;line-height:1.8;max-width:38ch}
+.footer h4{font-size:10.5px;letter-spacing:.24em;color:var(--gold);font-weight:500;margin-bottom:16px;font-family:var(--sans)}
+.footer ul li{margin-bottom:9px;font-size:13.5px}
+.footer ul a:hover{color:var(--gold-l)}
+.footer-bottom{
+  margin-top:44px;padding-top:22px;border-top:1px solid rgba(216,187,138,.14);
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  font-size:12px;color:rgba(245,237,221,.42);letter-spacing:.02em;
+}
+.to-top{
+  position:fixed;right:20px;bottom:22px;z-index:80;width:46px;height:46px;display:grid;place-items:center;
+  background:rgba(20,17,14,.82);color:var(--hanji);border:1px solid rgba(216,187,138,.45);border-radius:50%;
+  cursor:pointer;opacity:0;visibility:hidden;transform:translateY(8px);
+  transition:opacity .3s,transform .3s,visibility .3s,background .3s;
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+}
+.to-top.is-visible{opacity:1;visibility:visible;transform:none}
+.to-top:hover{background:var(--burgundy);border-color:var(--gold-l)}
+
+/* 드로어 열림 시 헤더 */
+body.nav-open .header{background:transparent;border-bottom-color:transparent;box-shadow:none;color:var(--hanji)}
+body.nav-open .header-cta{color:var(--hanji)}
+body.nav-open .nav-toggle{border-color:rgba(216,187,138,.55)}
+
+/* ── 등장 효과 ──────────────────────────────────────────── */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .9s cubic-bezier(.22,.61,.36,1),transform .9s cubic-bezier(.22,.61,.36,1)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  .door,.btn,.to-top{transition:none}
+  .panel-wrap{transition:none}
+}
+
+/* ── 반응형 ─────────────────────────────────────────────── */
+@media (max-width:1180px){
+  .site-nav a{padding:10px 10px;font-size:13.5px}
+  .header-inner{gap:18px}
+}
+@media (max-width:1040px){
+  .site-nav,.header-cta{display:none}
+  .nav-toggle{display:grid}
+  .hero-inner{grid-template-columns:1fr;gap:44px}
+  .hero-copy{max-width:none}
+  .invite{max-width:480px;margin-inline:auto;width:100%}
+  .about-grid,.host-grid,.band-grid,.panel-grid{grid-template-columns:1fr}
+  .door-grid{grid-template-columns:repeat(2,1fr)}
+  .door-feature{grid-column:span 2}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .contact-grid{grid-template-columns:1fr}
+  .ccard{min-height:0}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:30px}
+  .footer-brand{grid-column:1 / -1}
+  .panel-lead{max-width:none}
+}
+@media (max-width:760px){
+  body{font-size:16px}
+  .wrap{width:calc(100% - 40px)}
+  .header-inner{width:calc(100% - 32px)}
+  :root{--head:66px}
+  .brand-text strong{font-size:16px}
+  .brand-text em{font-size:8.5px;letter-spacing:.2em}
+  .brand-seal{width:36px;height:36px;flex-basis:36px;font-size:12px}
+  .hero{padding-top:calc(var(--head) + 52px)}
+  .hero-title{font-size:clamp(2.3rem,10.4vw,3rem);line-height:1.2}
+  .hero-sub{font-size:11.5px;letter-spacing:.22em;margin-top:18px}
+  .eyebrow{font-size:10.5px;letter-spacing:.18em;gap:10px;margin-bottom:18px}
+  .eyebrow::before{width:24px}
+  .invite-han{display:none}
+  .invite-quote{font-size:1.32rem}
+  .sec-title{font-size:clamp(1.62rem,7.2vw,2rem)}
+  .about-quote{font-size:1.28rem}
+  .door-tag{max-width:none}
+  .hero-lead{font-size:15px;margin-top:20px}
+  .hero-actions{margin-top:28px;gap:10px}
+  .hero-actions .btn{flex:1 1 100%}
+  .hero-meta{margin-top:30px;padding-top:20px;gap:12px;font-size:12.5px}
+  .hero-meta li{grid-template-columns:52px 1fr;gap:10px}
+  .hero-meta span{min-width:48px}
+  .invite-inner{min-height:300px;padding:26px 24px}
+  .invite-quote{font-size:1.32rem;margin:26px 0 14px}
+  .kw{gap:8px 20px}
+  .kw li{font-size:12.5px;letter-spacing:.08em;gap:0}
+  .kw li::after{display:none !important}
+  .section{padding:64px 0}
+  .pillars{grid-template-columns:1fr}
+  .door-grid{grid-template-columns:1fr;gap:12px}
+  .door-feature{grid-column:span 1}
+  .door{min-height:0}
+  .door-han{font-size:88px;bottom:-14px}
+  .steps{grid-template-columns:1fr}
+  .panel{padding:26px 20px 28px}
+  .panel-grid{gap:24px}
+  .panel-no{padding-right:64px}
+  .panel-han{font-size:40px;margin-top:8px}
+  .panel-close{top:10px;right:10px;padding:7px 10px;font-size:11.5px}
+  .panel-item{grid-template-columns:26px 1fr;gap:10px;align-items:start}
+  .panel-item i{padding-top:5px}
+  .pn-en{display:none}
+  .panel-ctas .btn{flex:1 1 100%}
+  .host-list li{grid-template-columns:88px 1fr;gap:12px}
+  .footer-grid{grid-template-columns:1fr;gap:28px}
+  .footer-bottom{flex-direction:column;gap:8px}
+  .to-top{right:14px;bottom:14px;width:42px;height:42px}
+  .contact-head{text-align:left}
+  .contact-head .sec-no{justify-content:flex-start}
+  .contact-note{text-align:left}
+}
+@media (max-width:380px){
+  .door{padding:20px}
+  .brand-text em{display:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 바로 가기</a>
+
+<!-- ══════════ 헤더 ══════════ -->
+<header class="header" id="header">
+  <div class="header-inner">
+    <a class="brand" href="#top" aria-label="한솔 토크 살롱 — 처음으로">
+      <span class="brand-seal" aria-hidden="true">한<br>솔</span>
+      <span class="brand-text"><strong>한솔 토크 살롱</strong><em>HANSOL TALK SALON</em></span>
+    </a>
+    <nav class="site-nav" aria-label="주요 메뉴">
+      <a href="#door-myeongni" data-door="myeongni">명리</a>
+      <a href="#door-nangsong" data-door="nangsong">낭송</a>
+      <a href="#door-changjak" data-door="changjak">창작</a>
+      <a href="#door-pyeongnon" data-door="pyeongnon">평론</a>
+      <a href="#door-sigeuk" data-door="sigeuk">시극</a>
+      <a href="#door-sichtyu" data-door="sichtyu">시치유</a>
+      <a href="#door-inmun" data-door="inmun">인문학</a>
+    </nav>
+    <a class="header-cta" href="tel:+821087109935">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 5c0 8 7 15 15 15l2-4-5-2-2 2c-3-1-5-3-6-6l2-2-2-5z"/></svg>
+      010-8710-9935
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="drawer"><span></span></button>
+  </div>
+</header>
+
+<!-- 모바일 드로어 -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <p class="d-eyebrow">일곱 개의 문</p>
+  <a class="d-link" href="#door-myeongni" data-door="myeongni"><i>01</i>명리</a>
+  <a class="d-link" href="#door-nangsong" data-door="nangsong"><i>02</i>낭송 &amp; 낭독</a>
+  <a class="d-link" href="#door-changjak" data-door="changjak"><i>03</i>창작</a>
+  <a class="d-link" href="#door-pyeongnon" data-door="pyeongnon"><i>04</i>평론</a>
+  <a class="d-link" href="#door-sigeuk" data-door="sigeuk"><i>05</i>시극</a>
+  <a class="d-link" href="#door-sichtyu" data-door="sichtyu"><i>06</i>시치유</a>
+  <a class="d-link" href="#door-inmun" data-door="inmun"><i>07</i>인문학공부</a>
+  <div class="d-foot">
+    <a class="btn btn-gold" href="tel:+821087109935">전화 문의 · 010-8710-9935</a>
+    <a class="btn btn-ghost" href="https://blog.naver.com/gdhan7" target="_blank" rel="noopener">네이버 블로그</a>
+    <p class="d-note">명리 · 시낭송 · 문학 · 인문 공간</p>
+  </div>
+</div>
+
+<main id="main">
+<!-- ══════════ 히어로 ══════════ -->
+<section class="hero" id="top">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow" style="color:var(--gold-l)">HANSOL TALK SALON · hansoltalk.kr</p>
+      <h1 class="hero-title">한솔 토크 살롱</h1>
+      <p class="hero-sub">명리 <span>·</span> 시낭송 <span>·</span> 문학 <span>·</span> 인문 공간</p>
+      <p class="hero-lead">
+        차 한 잔을 사이에 두고 사주를 읽고, 시를 낭송하고, 삶의 이야기를 나눕니다.
+        명리와 문학, 목소리와 마음이 한자리에 모이는 작은 살롱입니다.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#doors">일곱 개의 문 열어보기
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="tel:+821087109935">전화로 문의하기</a>
+      </div>
+      <ul class="hero-meta">
+        <li><span>살롱지기</span><b>한경동</b></li>
+        <li><span>표기</span><b>시낭송가 · 시낭송 지도강사 · 명리 상담 마스터 무극 선인</b></li>
+      </ul>
+    </div>
+
+    <aside class="invite" aria-label="살롱의 초대">
+      <div class="invite-inner">
+        <span class="invite-han" aria-hidden="true">詩命文</span>
+        <p class="invite-label">살롱의 초대</p>
+        <p class="invite-quote">시는 입술을 건너<br>마음에 닿습니다.</p>
+        <p class="invite-note">말이 머무는 자리,<br>마음이 피어나는 시간.</p>
+        <span class="invite-foot"><strong>한솔 토크 살롱</strong><span>살롱지기 한경동</span></span>
+      </div>
+    </aside>
+  </div>
+
+  <div class="kwband">
+    <ul class="wrap kw" aria-label="살롱의 일곱 영역">
+      <li>명리</li><li>시낭송</li><li>창작</li><li>평론</li><li>시극</li><li>시치유</li><li>인문학</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════ 살롱 소개 ══════════ -->
+<section class="section about" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="reveal">
+        <p class="sec-no">01 — 살롱 소개</p>
+        <h2 class="sec-title">이야기가 머무는<br><em>작은 살롱</em></h2>
+        <p class="about-quote">
+          좋은 대화는<br>사람을 <span>조금 더 다정하게</span> 만듭니다.
+        </p>
+      </div>
+      <div class="about-body reveal">
+        <p>
+          한솔 토크 살롱은 시낭송가 한경동이 운영하는 인문·예술 공간입니다.
+          사주로 삶의 결을 읽고(命), 시를 목소리로 만나고(聲), 고전과 창작으로 생각의 폭을 넓히는(學) 자리 —
+          서로의 이야기를 듣고 말하는 살롱의 방식으로 이어 갑니다.
+        </p>
+        <p>
+          큰 강의실도, 딱딱한 교실도 아닙니다. 한 사람의 사연과 한 편의 시가 온전히 머물 수 있는 시간을 만들고,
+          그 시간이 쌓여 각자의 삶에 조용한 힘이 되기를 바랍니다.
+        </p>
+        <p>
+          일곱 개의 문은 모두 열려 있습니다. 궁금한 문 앞에서 편하게 문을 두드려 주세요.
+        </p>
+      </div>
+    </div>
+
+    <div class="pillars reveal">
+      <div class="pillar">
+        <p class="pillar-han">命</p>
+        <h3>명리</h3>
+        <p>타고난 결을 읽는 지도. 사주 원국과 운의 흐름을 함께 읽으며 지금의 물음에 답합니다.</p>
+      </div>
+      <div class="pillar">
+        <p class="pillar-han">聲</p>
+        <h3>시와 목소리</h3>
+        <p>낭송과 낭독, 시극과 시치유로 시를 눈이 아닌 목소리와 마음으로 만납니다.</p>
+      </div>
+      <div class="pillar">
+        <p class="pillar-han">學</p>
+        <h3>쓰고 읽는 공부</h3>
+        <p>시와 소설, 평론과 웹소설을 쓰고, 동양학과 고전을 함께 읽으며 생각을 넓힙니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 일곱 개의 문 ══════════ -->
+<section class="section doors" id="doors">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="sec-no">02 — 일곱 개의 문</p>
+      <h2 class="sec-title">오늘은 <em>어느 문</em>을<br>두드려 볼까요</h2>
+      <p class="sec-lead">일곱 영역 모두 한경동이 직접 이끕니다. 궁금한 문을 누르면 그 안의 이야기가 아래에 펼쳐집니다.</p>
+    </div>
+
+    <div class="door-grid reveal" id="doorGrid">
+      <button class="door door-feature" type="button" data-door="myeongni" aria-controls="doorPanel" aria-expanded="false">
+        <span class="door-no">01 / 대표 상담</span>
+        <span class="door-han" aria-hidden="true">命</span>
+        <span class="door-body">
+          <span class="door-title">명리</span>
+          <span class="door-en">SAJU · CONSULTATION</span>
+          <span class="door-tag">삶의 지도를 함께 읽습니다</span>
+          <span class="door-more">열어보기
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </span>
+      </button>
+
+      <button class="door" type="button" data-door="nangsong" aria-controls="doorPanel" aria-expanded="false">
+        <span class="door-no">02</span>
+        <span class="door-han" aria-hidden="true">聲</span>
+        <span class="door-body">
+          <span class="door-title">낭송 &amp; 낭독</span>
+          <span class="door-en">RECITATION</span>
+          <span class="door-tag">시를 목소리로 만나는 시간</span>
+          <span class="door-more">열어보기
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </span>
+      </button>
+
+      <button class="door" type="button" data-door="changjak" aria-controls="doorPanel" aria-expanded="false">
+        <span class="door-no">03</span>
+        <span class="door-han" aria-hidden="true">文</span>
+        <span class="door-body">
+          <span class="door-title">창작</span>
+          <span class="door-en">WRITING</span>
+          <span class="door-tag">쓰는 사람의 자리</span>
+          <span class="door-more">열어보기
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </span>
+      </button>
+
+      <button class="door" type="button" data-door="pyeongnon" aria-controls="doorPanel" aria-expanded="false">
+        <span class="door-no">04</span>
+        <span class="door-han" aria-hidden="true">評</span>
+        <span class="door-body">
+          <span class="door-title">평론</span>
+          <span class="door-en">CRITICISM</span>
+          <span class="door-tag">작품을 함께 읽는 눈</span>
+          <span class="door-more">열어보기
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </span>
+      </button>
+
+      <button class="door" type="button" data-door="sigeuk" aria-controls="doorPanel" aria-expanded="false">
+        <span class="door-no">05</span>
+        <span class="door-han" aria-hidden="true">劇</span>
+        <span class="door-body">
+          <span class="door-title">시극</span>
+          <span class="door-en">POETIC THEATRE</span>
+          <span class="door-tag">시가 무대에서 숨 쉬다</span>
+          <span class="door-more">열어보기
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </span>
+      </button>
+
+      <button class="door" type="button" data-door="sichtyu" aria-controls="doorPanel" aria-expanded="false">
+        <span class="door-no">06</span>
+        <span class="door-han" aria-hidden="true">癒</span>
+        <span class="door-body">
+          <span class="door-title">시치유</span>
+          <span class="door-en">POETRY THERAPY</span>
+          <span class="door-tag">마음을 어루만지는 시</span>
+          <span class="door-more">열어보기
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </span>
+      </button>
+
+      <button class="door" type="button" data-door="inmun" aria-controls="doorPanel" aria-expanded="false">
+        <span class="door-no">07</span>
+        <span class="door-han" aria-hidden="true">學</span>
+        <span class="door-body">
+          <span class="door-title">인문학공부</span>
+          <span class="door-en">HUMANITIES</span>
+          <span class="door-tag">묻고 배우는 즐거움</span>
+          <span class="door-more">열어보기
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </span>
+      </button>
+    </div>
+
+    <!-- 상세 패널 -->
+    <noscript><p class="noscript">문을 눌러 상세 안내를 보시려면 브라우저의 자바스크립트를 켜 주세요. 바로 문의하시려면 전화 010-8710-9935로 연락 주셔도 됩니다.</p></noscript>
+    <div class="panel-wrap" id="doorPanelWrap">
+      <div class="panel-clip">
+        <article class="panel" id="doorPanel" aria-live="polite" tabindex="-1"></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 대표 소개 ══════════ -->
+<section class="section host" id="host">
+  <div class="wrap host-grid">
+    <div class="host-card reveal">
+      <span class="host-vertical" aria-hidden="true">無極仙人</span>
+      <div class="host-seal" aria-hidden="true">韓</div>
+      <h3>한경동</h3>
+      <p class="host-role">시낭송가 · 시낭송 지도강사<br>명리 상담 마스터 무극 선인</p>
+      <p class="host-quote">
+        “목소리로 시를 읽고,<br>사주로 사람을 읽습니다.<br>그 두 가지가 만나는 자리가<br>이 살롱입니다.”
+      </p>
+    </div>
+
+    <div class="host-body reveal">
+      <p class="sec-no">03 — 살롱지기</p>
+      <h2>시를 읽고, 사람을 읽는 <em>살롱지기</em></h2>
+      <p>
+        상상나래시낭송교육원과 상상속시낭송회를 운영하며 시낭송을 가르치고, 전국 시낭송대회의 무대에서 심사와 지도를 맡아 왔습니다.
+        동시에 한솔 명리상담소에서 ‘무극 선인’의 이름으로 사주를 읽어 왔습니다.
+      </p>
+      <p>
+        낭송은 시를 남의 글로 두지 않고 내 목소리로 살아 있게 하는 일이고, 명리는 사람의 타고난 결을 이해하는 일이라고 믿습니다.
+        그 두 가지가 따로 있지 않다는 생각으로 이 살롱을 열었습니다.
+      </p>
+      <ul class="host-list">
+        <li><span>낭송</span>상상나래시낭송교육원 · 상상속시낭송회 운영, 시낭송 지도와 표준발음법</li>
+        <li><span>심사</span>전국 시낭송대회·축제 심사 및 지도</li>
+        <li><span>명리</span>한솔 명리상담소 · 명리 상담 마스터 무극 선인 · 1:1 화상 상담</li>
+        <li><span>공부</span>글로벌사이버대학교 동양학과에서 동양학을 공부하고 있습니다</li>
+        <li><span>글</span>네이버 블로그 『소통과 화해 — 입술을 건너온 행복』 연재, 단편소설·시·웹소설 집필</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 살롱의 방식 ══════════ -->
+<section class="section how" id="how">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="sec-no">04 — 살롱의 방식</p>
+      <h2 class="sec-title">살롱은 이렇게 <em>열립니다</em></h2>
+      <p class="sec-lead">정해진 절차보다, 편하게 이야기하는 것부터 시작합니다. 전화 한 통이면 충분합니다.</p>
+    </div>
+
+    <div class="steps reveal">
+      <div class="step">
+        <p class="step-no">STEP 01</p>
+        <h3>문의</h3>
+        <p>전화나 문자로 궁금한 영역을 알려 주세요. 상담인지, 수업인지, 살롱 모임인지에 따라 안내가 달라집니다.</p>
+      </div>
+      <div class="step">
+        <p class="step-no">STEP 02</p>
+        <h3>첫 대화</h3>
+        <p>필요한 정보와 일정을 함께 정합니다. 사주 상담은 생년월일과 태어난 시간을 미리 알려 주시면 좋습니다.</p>
+      </div>
+      <div class="step">
+        <p class="step-no">STEP 03</p>
+        <h3>만남</h3>
+        <p>화상이나 전화, 또는 대면으로 만납니다. 낭송·창작·평론은 원고와 목소리를 함께 놓고 이야기합니다.</p>
+      </div>
+      <div class="step">
+        <p class="step-no">STEP 04</p>
+        <h3>이어지는 공부</h3>
+        <p>한 번의 만남으로 끝내지 않습니다. 다음 걸음을 함께 정하고, 필요하면 블로그와 온라인 자료로 이어 갑니다.</p>
+      </div>
+    </div>
+
+    <div class="faq reveal">
+      <details>
+        <summary>명리 상담은 어떻게 진행되나요?</summary>
+        <p class="faq-a">1:1 화상(Zoom) 또는 전화로 진행합니다. 생년월일과 태어난 시간을 미리 알려 주시면 원국을 준비해 두고, 상담에서는 지금 마주한 문제를 중심으로 함께 이야기합니다. 일정과 방식은 전화로 정합니다.</p>
+      </details>
+      <details>
+        <summary>사주를 처음 보는데 괜찮을까요?</summary>
+        <p class="faq-a">처음이신 분이 더 많습니다. 어려운 용어를 늘어놓기보다, 지금의 삶에 바로 쓸 수 있는 이야기로 풀어 드립니다. 온라인에서 무료 타로와 AI 사주리포트를 먼저 가볍게 만나 보셔도 좋습니다.</p>
+      </details>
+      <details>
+        <summary>시낭송을 배우려면 준비가 필요한가요?</summary>
+        <p class="faq-a">목소리와 좋아하는 시 한 편이면 충분합니다. 호흡과 발음, 시를 이해하는 방식부터 차근차근 함께합니다. 무대 경험이 없어도 괜찮습니다.</p>
+      </details>
+      <details>
+        <summary>살롱 모임은 언제 열리나요?</summary>
+        <p class="faq-a">모임 일정은 그때그때 블로그와 전화로 안내드립니다. 정기 모임과 특별 강연, 낭송 발표회를 상황에 맞추어 엽니다. 참여를 원하시면 전화로 알려 주세요.</p>
+      </details>
+      <details>
+        <summary>AI 사주리포트와 마스터 상담은 어떻게 다른가요?</summary>
+        <p class="faq-a">AI 리포트는 원국의 기본 구조와 흐름을 정리해 주는 자료입니다. 마스터 상담은 그 위에 삶의 맥락과 물음을 함께 놓고 이야기하는 시간입니다. 리포트를 먼저 받아 보시고 상담으로 이어 가시는 분도 많습니다.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 블로그 ══════════ -->
+<section class="band blog-band" id="blog">
+  <div class="wrap band-grid">
+    <div class="reveal">
+      <p class="sec-no">05 — 살롱 노트</p>
+      <h2>『소통과 화해 —<br>입술을 건너온 행복』</h2>
+      <p>
+        시와 명리, 낭송 이야기를 블로그에 꾸준히 남기고 있습니다.
+        『바람의 정원』에서는 60일주를 시로 읽고, 전국 시낭송대회 일정도 정리해 나눕니다.
+      </p>
+      <a class="btn btn-ink" href="https://blog.naver.com/gdhan7" target="_blank" rel="noopener">
+        블로그에서 읽기
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+    <ul class="note-list reveal">
+      <li><span>연재</span>『바람의 정원』 — 60일주, 시로 읽는 사주</li>
+      <li><span>정리</span>전국 시낭송대회 일정과 낭송 자료</li>
+      <li><span>기록</span>시낭송·표준발음법·창작에 관한 이야기</li>
+      <li><span>안내</span>살롱 모임과 강의 소식</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════ AI 사주 ══════════ -->
+<section class="band ai-band" id="ai">
+  <div class="wrap band-grid">
+    <div class="reveal">
+      <p class="sec-no">06 — 온라인에서 먼저</p>
+      <h2>먼저 온라인에서<br>만나 보세요</h2>
+      <p>
+        한솔 명리의 AI 사주 웹앱에서 무료 타로를 체험하고, AI 사주리포트로 원국의 기본 구조를 살펴볼 수 있습니다.
+        더 깊은 이야기는 1:1 마스터 상담에서 이어집니다.
+      </p>
+      <a class="btn btn-gold" href="https://gdhan77-cell.github.io/hansol-saju/" target="_blank" rel="noopener">
+        한솔 명리 AI 사주 바로가기
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <p class="ai-tiny">외부 사이트로 이동합니다 · 무료 타로 체험 가능</p>
+    </div>
+    <div class="ai-feats reveal">
+      <div class="ai-feat"><b>무료</b><span>타로 카드 체험 — 오늘의 마음을 가볍게</span></div>
+      <div class="ai-feat"><b>리포트</b><span>AI 사주리포트 — 원국과 운의 흐름 정리</span></div>
+      <div class="ai-feat"><b>1:1</b><span>마스터 화상 상담 — 무극 선인의 직접 상담</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 문의 ══════════ -->
+<section class="section contact" id="contact">
+  <div class="wrap">
+    <div class="contact-head reveal">
+      <p class="sec-no">07 — 문의</p>
+      <h2>차 한 잔,<br>준비해 두겠습니다</h2>
+      <p>궁금한 문 앞에서 망설이지 마세요. 전화 한 통이면 살롱의 문이 열립니다.</p>
+    </div>
+
+    <div class="contact-grid reveal">
+      <a class="ccard" href="tel:+821087109935">
+        <span class="ccard-k">Phone</span>
+        <span class="ccard-v">010-8710-9935</span>
+        <span class="ccard-n">전화·문자 모두 환영합니다. 통화가 어려우시면 문자를 남겨 주세요.</span>
+      </a>
+      <a class="ccard" href="https://blog.naver.com/gdhan7" target="_blank" rel="noopener">
+        <span class="ccard-k">Blog</span>
+        <span class="ccard-v">blog.naver.com/gdhan7</span>
+        <span class="ccard-n">『소통과 화해 — 입술을 건너온 행복』에서 소식과 글을 만나 보세요.</span>
+      </a>
+      <a class="ccard" href="https://gdhan77-cell.github.io/hansol-saju/" target="_blank" rel="noopener">
+        <span class="ccard-k">Online</span>
+        <span class="ccard-v">한솔 명리 AI 사주</span>
+        <span class="ccard-n">무료 타로와 AI 사주리포트를 온라인에서 바로 체험할 수 있습니다.</span>
+      </a>
+    </div>
+
+    <p class="contact-note">
+      상담과 살롱 모임 일정은 전화로 정합니다. 상담 과정에서 알려 주신 정보는 상담 목적으로만 사용합니다.
+    </p>
+  </div>
+</section>
+</main>
+
+<!-- ══════════ 푸터 ══════════ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="한솔 토크 살롱 — 처음으로">
+          <span class="brand-seal" aria-hidden="true">한<br>솔</span>
+          <span class="brand-text"><strong>한솔 토크 살롱</strong><em>HANSOL TALK SALON</em></span>
+        </a>
+        <p>명리 · 시낭송 · 문학 · 인문 공간.<br>차 한 잔과 한 편의 시, 그리고 한 사람의 이야기가 머무는 자리.</p>
+      </div>
+      <div>
+        <h4>일곱 개의 문</h4>
+        <ul>
+          <li><a href="#door-myeongni" data-door="myeongni">명리</a></li>
+          <li><a href="#door-nangsong" data-door="nangsong">낭송 &amp; 낭독</a></li>
+          <li><a href="#door-changjak" data-door="changjak">창작</a></li>
+          <li><a href="#door-pyeongnon" data-door="pyeongnon">평론</a></li>
+          <li><a href="#door-sigeuk" data-door="sigeuk">시극</a></li>
+          <li><a href="#door-sichtyu" data-door="sichtyu">시치유</a></li>
+          <li><a href="#door-inmun" data-door="inmun">인문학공부</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>연락</h4>
+        <ul>
+          <li><a href="tel:+821087109935">010-8710-9935</a></li>
+          <li><a href="https://blog.naver.com/gdhan7" target="_blank" rel="noopener">네이버 블로그</a></li>
+          <li><a href="https://gdhan77-cell.github.io/hansol-saju/" target="_blank" rel="noopener">한솔 명리 AI 사주</a></li>
+          <li>hansoltalk.kr</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> 한솔 토크 살롱 · 살롱지기 한경동</span>
+      <span>시낭송가 · 시낭송 지도강사 · 명리 상담 마스터 무극 선인</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="맨 위로">
+  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ── 일곱 개의 문 데이터 ─────────────────────────────── */
+  var DOORS = {
+    myeongni: {
+      no: "01", han: "命", title: "명리", en: "SAJU · CONSULTATION",
+      lead: "사주는 앞날을 정해 두는 답안지가 아니라, 타고난 결을 알아 가는 지도입니다. 원국과 대운·세운을 함께 읽으며 지금의 물음에 함께 답합니다.",
+      forWhom: "진로와 관계, 일과 돈의 흐름이 답답하게 느껴질 때. 큰 결정을 앞두고 한 번쯤 삶의 지도를 펼쳐 보고 싶을 때.",
+      items: [
+        {t:"한솔 명리상담소", d:"사주 원국을 바탕으로 성향과 운의 흐름을 읽고, 지금 마주한 문제를 함께 정리합니다."},
+        {t:"명리 상담 마스터 · 무극 선인", d:"‘무극 선인’의 이름으로 직접 상담합니다. 용어보다 삶의 맥락을 먼저 듣습니다."},
+        {t:"AI 사주리포트 & 무료 타로 체험", d:"온라인에서 무료 타로를 체험하고, AI 사주리포트로 원국의 기본 구조를 먼저 살펴볼 수 있습니다."},
+        {t:"1:1 마스터 화상 상담", d:"Zoom 화상 또는 전화로 1:1 상담을 진행합니다. 상담 일정과 방식은 전화로 문의해 주세요."}
+      ],
+      ctas: [
+        {label:"AI 사주 웹앱 바로가기", href:"https://gdhan77-cell.github.io/hansol-saju/", kind:"gold", ext:true},
+        {label:"전화로 상담 문의", href:"tel:+821087109935", kind:"line"}
+      ],
+      note: "상담은 예약제로 진행하며, 일정은 전화로 정합니다."
+    },
+    nangsong: {
+      no: "02", han: "聲", title: "낭송 & 낭독", en: "RECITATION",
+      lead: "시는 눈으로 읽을 때보다 입술을 건널 때 더 가까워집니다. 호흡과 발음, 목소리의 결을 다듬으며 시 한 편이 온전히 나의 것이 되도록 함께 읽습니다.",
+      forWhom: "시를 좋아하지만 어떻게 읽어야 할지 막막한 분. 무대에서 내 목소리로 시를 전하고 싶은 분.",
+      items: [
+        {t:"상상나래시낭송교육원", d:"시낭송의 기초부터 무대 낭송까지 단계별로 지도합니다. 처음 시작하는 분도 환영합니다."},
+        {t:"상상속시낭송회", d:"시를 사랑하는 사람들이 모여 함께 읽고 발표하는 낭송 모임입니다."},
+        {t:"시낭송 지도 · 표준발음법", d:"정확한 발음과 표준발음법, 문장의 호흡과 쉼을 함께 짚어 드립니다."},
+        {t:"전국 대회 심사", d:"전국 시낭송대회와 축제의 심사와 지도를 맡아 낭송의 기준을 세워 왔습니다."}
+      ],
+      ctas: [
+        {label:"전화로 문의하기", href:"tel:+821087109935", kind:"gold"},
+        {label:"대회 일정 보기", href:"https://blog.naver.com/gdhan7", kind:"line", ext:true}
+      ],
+      note: "수업과 모임 일정은 전화로 안내드립니다."
+    },
+    changjak: {
+      no: "03", han: "文", title: "창작", en: "WRITING",
+      lead: "한 편의 글은 재능보다 시간이 만들어 줍니다. 단편소설과 시, 웹소설을 쓰고 고치는 과정을 함께하며 원고가 완성되는 순간까지 곁을 지킵니다.",
+      forWhom: "신춘문예와 공모전을 준비하는 분. 오래 묵혀 둔 원고를 끝까지 쓰고 싶은 분.",
+      items: [
+        {t:"단편소설", d:"신춘문예 응모작을 비롯한 단편소설의 구성과 문장을 함께 다듬습니다."},
+        {t:"시", d:"한 편의 시를 오래 읽고 고쳐 쓰는 작업을 합니다. 좋은 시가 되는 자리를 함께 찾습니다."},
+        {t:"웹소설", d:"연재를 위한 인물과 구성, 문장 전략을 함께 세웁니다."},
+        {t:"창작 워크숍", d:"원고 합평과 집필 모임으로 서로의 글을 읽어 주고, 다음 문장을 쓰게 합니다."}
+      ],
+      ctas: [
+        {label:"원고 상담 문의", href:"tel:+821087109935", kind:"gold"},
+        {label:"블로그에서 글 읽기", href:"https://blog.naver.com/gdhan7", kind:"line", ext:true}
+      ],
+      note: "원고는 미리 보내 주시면 읽어 두고 상담에 임합니다."
+    },
+    pyeongnon: {
+      no: "04", han: "評", title: "평론", en: "CRITICISM",
+      lead: "좋은 글을 알아보는 눈은 많이 읽고 함께 이야기하며 자랍니다. 시와 소설을 깊이 읽고, 그 의미와 형식을 글로 풀어내는 평론의 공부를 이어 갑니다.",
+      forWhom: "작품을 읽고 나서 하고 싶은 말이 남는 분. 비평의 언어로 글을 써 보고 싶은 분.",
+      items: [
+        {t:"문학 평론", d:"작품과 시대를 잇는 글을 씁니다. 한 편의 작품이 놓인 자리를 함께 살핍니다."},
+        {t:"시 비평", d:"한 편의 시를 정밀하게 읽고, 그 언어와 정서를 글로 풀어냅니다."},
+        {t:"소설 비평", d:"서사와 인물, 문체를 읽으며 소설이 하는 일을 함께 생각합니다."},
+        {t:"평론반 연구", d:"함께 읽고 쓰는 평론 공부. 발표와 합평으로 글의 논리를 다듬습니다."}
+      ],
+      ctas: [
+        {label:"평론반 문의", href:"tel:+821087109935", kind:"gold"}
+      ],
+      note: "평론반은 소수 인원으로 운영하며, 참여 여부는 상담 후 정합니다."
+    },
+    sigeuk: {
+      no: "05", han: "劇", title: "시극", en: "POETIC THEATRE",
+      lead: "시와 연극이 만나면 목소리는 움직임이 되고, 한 줄의 시는 장면이 됩니다. 시극 대본을 쓰고 연출하며, 낭송과 연기가 어우러진 무대를 만듭니다.",
+      forWhom: "시를 무대에서 다르게 보여 주고 싶은 분. 낭송을 넘어 장면으로 시를 말하고 싶은 분.",
+      items: [
+        {t:"시극 대본", d:"시를 극으로 옮기는 글쓰기. 한 편의 시에서 장면과 인물을 길어 올립니다."},
+        {t:"연출", d:"목소리와 움직임, 빛과 침묵의 배치를 함께 설계합니다."},
+        {t:"낭송 공연", d:"시와 연극이 만나는 무대를 만들고, 관객 앞에서 함께 호흡합니다."}
+      ],
+      ctas: [
+        {label:"공연·워크숍 문의", href:"tel:+821087109935", kind:"gold"}
+      ],
+      note: "공연과 워크숍은 준비 상황에 따라 일정이 열립니다."
+    },
+    sichtyu: {
+      no: "06", han: "癒", title: "시치유", en: "POETRY THERAPY",
+      lead: "설명하기 어려운 마음을 시가 대신 말해 줄 때가 있습니다. 명리와 심리 상담, 낭송을 함께 놓고 마음의 자리를 살피는 시간을 엽니다.",
+      forWhom: "말로 다 하지 못한 마음이 오래 남아 있는 분. 시를 매개로 나를 돌아보고 싶은 분.",
+      items: [
+        {t:"시 치유 프로그램", d:"한 편의 시를 천천히 읽고, 그 시가 건드린 마음을 함께 살핍니다."},
+        {t:"명리 · 심리 상담과 낭송의 결합", d:"사주로 삶의 결을 읽고, 목소리로 마음을 놓아 두는 시간을 함께 가집니다."},
+        {t:"단체 · 기관 프로그램", d:"기관과 모임을 위한 시치유 프로그램을 상황에 맞게 구성합니다."}
+      ],
+      ctas: [
+        {label:"프로그램 문의", href:"tel:+821087109935", kind:"gold"}
+      ],
+      note: "치료를 대신하는 의료 행위가 아니라, 시를 매개로 한 마음 돌봄의 시간입니다."
+    },
+    inmun: {
+      no: "07", han: "學", title: "인문학공부", en: "HUMANITIES",
+      lead: "동양학과 인문학의 오래된 물음들이 오늘의 삶을 비추어 줍니다. 고전을 읽고, 책을 쓰고, 읽은 것을 목소리로 남기는 공부를 함께합니다.",
+      forWhom: "나이 들어서도 배우고 싶은 분. 읽은 것을 글이나 목소리로 남기고 싶은 분.",
+      items: [
+        {t:"동양학", d:"명리와 고전의 뿌리를 함께 읽으며 동양적 사유의 지형을 살핍니다."},
+        {t:"인문학 고전 읽기", d:"오래된 텍스트를 오늘의 언어로 읽습니다. 함께 읽으면 더 멀리 갑니다."},
+        {t:"책쓰기", d:"한 권의 책을 완성하는 과정. 주제를 정하고 목차를 세우고 원고를 끝까지 씁니다."},
+        {t:"유튜브 콘텐츠", d:"읽고 말하고 기록하기. 시낭송과 인문학 이야기를 영상으로 남기는 법을 함께합니다."}
+      ],
+      ctas: [
+        {label:"공부 모임 문의", href:"tel:+821087109935", kind:"gold"},
+        {label:"블로그에서 읽기", href:"https://blog.naver.com/gdhan7", kind:"line", ext:true}
+      ],
+      note: "과정과 일정은 전화로 상의해 정합니다."
+    }
+  };
+
+  var header = document.getElementById("header");
+  var navToggle = document.getElementById("navToggle");
+  var drawer = document.getElementById("drawer");
+  var grid = document.getElementById("doorGrid");
+  var panelWrap = document.getElementById("doorPanelWrap");
+  var panel = document.getElementById("doorPanel");
+  var toTop = document.getElementById("toTop");
+  var isMobile = function(){ return window.matchMedia("(max-width: 1040px)").matches; };
+
+  /* ── 헤더 상태 ───────────────────────────────────────── */
+  function onScroll(){
+    var y = window.pageYOffset || document.documentElement.scrollTop;
+    if(y > 24){ header.classList.add("is-solid"); } else { header.classList.remove("is-solid"); }
+    if(y > 640){ toTop.classList.add("is-visible"); } else { toTop.classList.remove("is-visible"); }
+  }
+  window.addEventListener("scroll", onScroll, {passive:true});
+  onScroll();
+
+  /* ── 모바일 드로어 ───────────────────────────────────── */
+  function openNav(open){
+    document.body.classList.toggle("nav-open", open);
+    navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    navToggle.setAttribute("aria-label", open ? "메뉴 닫기" : "메뉴 열기");
+    drawer.setAttribute("aria-hidden", open ? "false" : "true");
+    document.body.style.overflow = open ? "hidden" : "";
+  }
+  navToggle.addEventListener("click", function(){
+    openNav(!document.body.classList.contains("nav-open"));
+  });
+
+  /* ── 상세 패널 ───────────────────────────────────────── */
+  var openKey = null;
+
+  function arrow(){ return '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'; }
+
+  function render(key){
+    var d = DOORS[key];
+    if(!d){ return; }
+    var items = d.items.map(function(it, i){
+      return '<div class="panel-item"><i>' + String(i+1).padStart(2,"0") + '</i><div><h4>' + it.t + '</h4><p>' + it.d + '</p></div></div>';
+    }).join("");
+    var ctas = d.ctas.map(function(c){
+      var cls = c.kind === "gold" ? "btn btn-gold" : "btn btn-line";
+      var ext = c.ext ? ' target="_blank" rel="noopener"' : '';
+      var icon = c.ext ? ' ' + arrow() : '';
+      return '<a class="' + cls + '" href="' + c.href + '"' + ext + '>' + c.label + icon + '</a>';
+    }).join("");
+    panel.innerHTML =
+      '<button class="panel-close" type="button" id="panelClose">닫기 ✕</button>' +
+      '<div class="panel-grid">' +
+        '<div class="panel-head">' +
+          '<p class="panel-no">' + d.no + ' — ' + d.title + '<span class="pn-en"> · ' + d.en + '</span></p>' +
+          '<h3 class="panel-title">' + d.title + '</h3>' +
+          '<p class="panel-han" aria-hidden="true">' + d.han + '</p>' +
+          '<p class="panel-lead">' + d.lead + '</p>' +
+          '<p class="panel-for"><strong>이런 분께</strong>' + d.forWhom + '</p>' +
+        '</div>' +
+        '<div class="panel-body">' +
+          '<div class="panel-items">' + items + '</div>' +
+          '<div class="panel-ctas">' + ctas + '</div>' +
+          '<p class="panel-note">' + d.note + '</p>' +
+        '</div>' +
+      '</div>';
+    document.getElementById("panelClose").addEventListener("click", function(){ closeDoor(); });
+  }
+
+  function setActive(key){
+    var links = document.querySelectorAll("[data-door]");
+    for(var i=0;i<links.length;i++){
+      links[i].classList.toggle("is-active", links[i].getAttribute("data-door") === key && links[i].tagName === "A");
+    }
+    var cards = grid.querySelectorAll(".door");
+    for(var j=0;j<cards.length;j++){
+      var on = cards[j].getAttribute("data-door") === key;
+      cards[j].classList.toggle("is-open", on);
+      cards[j].setAttribute("aria-expanded", on ? "true" : "false");
+    }
+  }
+
+  function openDoor(key, opts){
+    if(!DOORS[key]){ return; }
+    render(key);
+    openKey = key;
+    setActive(key);
+    panelWrap.classList.add("is-open");
+    if(opts && opts.focus){
+      window.setTimeout(function(){
+        panelWrap.scrollIntoView({behavior:"smooth", block:"start"});
+        panel.focus({preventScroll:true});
+      }, 90);
+    }
+  }
+
+  function closeDoor(){
+    openKey = null;
+    panelWrap.classList.remove("is-open");
+    setActive(null);
+    if(isMobile() === false){ /* 데스크톱에서는 카드 위치 유지 */ }
+  }
+
+  function handleDoorTrigger(e){
+    var el = e.currentTarget;
+    var key = el.getAttribute("data-door");
+    var inDrawer = el.closest ? el.closest(".drawer") : null;
+    if(e){ e.preventDefault(); }
+    if(inDrawer){ openNav(false); }
+    if(openKey === key && !inDrawer){
+      closeDoor();
+      return;
+    }
+    openDoor(key, {focus:true});
+  }
+
+  var triggers = document.querySelectorAll("[data-door]");
+  for(var i=0;i<triggers.length;i++){
+    triggers[i].addEventListener("click", handleDoorTrigger);
+  }
+
+  /* ── 상단·푸터 이동, 맨 위로 ────────────────────────── */
+  var anchors = document.querySelectorAll('a[href^="#"]');
+  for(var a=0;a<anchors.length;a++){
+    if(anchors[a].hasAttribute("data-door")){ continue; }
+    anchors[a].addEventListener("click", function(e){
+      var id = this.getAttribute("href");
+      if(id === "#" || id.length < 2){ return; }
+      var target = document.querySelector(id);
+      if(!target){ return; }
+      e.preventDefault();
+      if(document.body.classList.contains("nav-open")){ openNav(false); }
+      target.scrollIntoView({behavior:"smooth", block:"start"});
+    });
+  }
+  toTop.addEventListener("click", function(){
+    window.scrollTo({top:0, behavior:"smooth"});
+  });
+
+  /* ── ESC ─────────────────────────────────────────────── */
+  document.addEventListener("keydown", function(e){
+    if(e.key !== "Escape"){ return; }
+    if(document.body.classList.contains("nav-open")){ openNav(false); return; }
+    if(openKey){ closeDoor(); if(grid){ /* 포커스 되돌리기 */ } }
+  });
+
+  /* ── 등장 효과 ───────────────────────────────────────── */
+  var reveals = document.querySelectorAll(".reveal");
+  if("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); }
+      });
+    }, {rootMargin:"0px 0px -8% 0px", threshold:0.06});
+    for(var r=0;r<reveals.length;r++){ io.observe(reveals[r]); }
+  } else {
+    for(var r2=0;r2<reveals.length;r2++){ reveals[r2].classList.add("in"); }
+  }
+  window.setTimeout(function(){
+    for(var k=0;k<reveals.length;k++){ reveals[k].classList.add("in"); }
+  }, 2600);
+
+  /* ── 연도 ────────────────────────────────────────────── */
+  var y = new Date().getFullYear();
+  var yEl = document.getElementById("year");
+  if(yEl){ yEl.textContent = String(y); }
+
+  /* ── 첫 진입 시 명리 문 안내 (해시 없을 때) ─────────── */
+  if(window.location.hash){
+    var h = window.location.hash.replace("#door-","");
+    if(DOORS[h]){ openDoor(h, {focus:false}); }
+  }
+})();
+</script>
+</body>
+</html>
